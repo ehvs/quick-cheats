@@ -7,5 +7,4 @@ Create a
 
 .vimrc at home directory
 
-Eg.
-/home/username/.vimrc
+Eg. `/home/username/.vimrc`
