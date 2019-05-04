@@ -6,6 +6,14 @@ git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt -
 ~~~
 Add to the ~/.bashrc:
 
+~~~
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
+~~~
+Source [magicmonty/bash-git-prompt](https://github.com/magicmonty/bash-git-prompt#via-git-clone)
+
 
 # For file: my-vimrc
 
@@ -20,4 +28,4 @@ Create a
 
 Eg. `/home/username/.vimrc`
 
-Quick GIT cheat sheets: http://rogerdudler.github.io/git-guide/
+[CheatSheet](http://rogerdudler.github.io/git-guide/)
