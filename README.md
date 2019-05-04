@@ -1,3 +1,12 @@
+# For file: .bashrc
+
+via Git clone - Clone this repository to your home directory.
+~~~
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+~~~
+Add to the ~/.bashrc:
+
+
 # For file: my-vimrc
 
 Check if you do not have the file:
