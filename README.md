@@ -1,31 +1,22 @@
-# For file: .bashrc
-
-via Git clone - Clone this repository to your home directory.
+# PowerLevel9k to terminal!
+### Install ZSH
 ~~~
-git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+sudo dnf install -y zsh
 ~~~
-Add to the ~/.bashrc:
+
+### Install Oh My ZSH
+#### https://github.com/robbyrussell/oh-my-zsh
+~~~
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+~~~
+### Install PowerLevel9k
+#### https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-2-install-for-oh-my-zsh
+~~~
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+~~~
+### Install Hack font
 
 ~~~
-if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-    GIT_PROMPT_ONLY_IN_REPO=1
-    source $HOME/.bash-git-prompt/gitprompt.sh
-fi
+Download HACK font from link below
+https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 ~~~
-Source [magicmonty/bash-git-prompt](https://github.com/magicmonty/bash-git-prompt#via-git-clone)
-
-
-# For file: my-vimrc
-
-Check if you do not have the file:
-`/etc/vimrc`
-
-If you do, remove it.
-
-Create a 
-
-.vimrc at home directory
-
-Eg. `/home/username/.vimrc`
-
-[CheatSheet](http://rogerdudler.github.io/git-guide/)
