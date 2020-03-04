@@ -26,3 +26,20 @@ https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/co
 ### Reference
 [GNOME 3.28] PowerLevel9k -  The Most Cool Linux Shell EVER!
 https://youtu.be/wM1uNqj71Ko
+
+### Colorful less tool
+
+1. Install python3-pygments
+~~~
+sudo dnf install python-pygments
+~~~ 
+2. Create file [.lessfilter](https://raw.githubusercontent.com/ehvs/vim_bash_settings/master/.lessfilter) in $HOME dir.
+3. In your $HOME/.bashrc add
+~~~
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
+~~~ 
+4. Make ~/.lessfilter executable by running
+~~~ 
+chmod u+x ~/.lessfilter
+~~~ 
