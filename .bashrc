@@ -16,3 +16,5 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
