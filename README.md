@@ -43,3 +43,9 @@ export LESSOPEN='|~/.lessfilter %s'
 ~~~ 
 chmod u+x ~/.lessfilter
 ~~~ 
+
+### Install packages
+
+~~~
+sudo dnf install -y bat googler
+~~~
