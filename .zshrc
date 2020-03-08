@@ -116,7 +116,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
 alias cat=bat
-alias less=bat
 alias google=googler
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/hgomes/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hgomes/google-cloud-sdk/path.zsh.inc'; fi
