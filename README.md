@@ -14,6 +14,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ~~~
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ~~~
+#### For root
+Does the same then change the default shell by:
+~~~
+# chsh -s $(which zsh) root
+~~~
 ### Install Hack font
 1. Download HACK font from link below
 ~~~
