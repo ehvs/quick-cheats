@@ -7,7 +7,7 @@ export ZSH="/home/hgomes/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 
@@ -21,12 +21,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 POWERLEVEL9K_CUSTOM_FEDORA_ICON="echo "
 POWERLEVEL9K_CUSTOM_FEDORA_ICON_BACKGROUND=069
 POWERLEVEL9K_CUSTOM_FEDORA_ICON_FOREGROUND=015
-
-#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="echo \$(nmcli device wifi | grep \* | awk '{print $9}')"
-#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
-#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_FOREGROUND="green"
-
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -114,11 +108,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
 alias vi=vim
-alias cat=bat
-alias google=googler
+#alias cat=bat
+#alias google=googler
+#alias top=glances
+alias sos='ssh supportshell.cee.redhat.com'
+
+#when type the file ending with yml or yaml it will open using vim
+alias -s {yml,yaml}=vim
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/hgomes/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hgomes/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/hgomes/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/hgomes/google-cloud-sdk/completion.zsh.inc'; fi
+
+xmodmap -e 'keycode 91 = KP_Delete period KP_Delete period KP_Delete period '
