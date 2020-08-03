@@ -19,10 +19,18 @@ au BufRead,BufNewFile *.yml set filetype=yaml.ansible
 au BufRead,BufNewFile *.yaml set filetype=yaml.ansible
 ~~~
 
+- Since this plugin has specific [requirements](https://github.com/pearofducks/ansible-vim#introduction) to recognize Ansible files the below lines were added in the `~/.vimrc` file.
+~~~
+au BufRead,BufNewFile *.yml set filetype=yaml.ansible
+au BufRead,BufNewFile *.yaml set filetype=yaml.ansible
+~~~
+
 2. Install the plugin [pearofducks/ansible-vim](https://github.com/pearofducks/ansible-vim)
 ~~~
 $ vim
+~~~
 
-- It will open the Vim interactive window, then install the plugin (listed at your .vimrc) by running:
+It will open the Vim interactive window, then install the plugin (listed at your .vimrc) by running:
+~~~
 $ :PluginInstall
 ~~~
