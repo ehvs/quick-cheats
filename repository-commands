@@ -1,5 +1,0 @@
-# Linux Repo commands 
-
-### Check repositories
-
-/etc/yum.repos.d/open_ansible-tower-implementation.repo
