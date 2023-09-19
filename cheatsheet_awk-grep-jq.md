@@ -23,6 +23,9 @@ declare -a arr=() ; for i in $(oc get nodes --no-headers | awk '{print $1}'); do
 - Filtering by field
 ```
 $ awk -F "|" '$5 < 4000 ' file.txt
+OR
+$ awk -F "|" -v low_salary="4000" '$5 < low_salary ' file.txt
+$ awk -F "|" -v low_salary="4000" '$5 < low_salary { print $4 } ' file.txt
 
 08|garca|branca|branca_a_garca@gmail.com|1000
 09|micael|o gato|micael@gmail.com|2000
