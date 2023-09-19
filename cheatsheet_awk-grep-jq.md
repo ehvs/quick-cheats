@@ -20,6 +20,20 @@ for i in {1..$count}; do node=`awk -v i=$i 'NR==i { print $1}' list-audit.log` ;
 declare -a arr=() ; for i in $(oc get nodes --no-headers | awk '{print $1}'); do arr+=( "$i"); echo $i ; done
 declare -a arr=() ; for i in $(oc get nodes --no-headers | awk '{print $1}'); do arr+=( "$i"); oc get nodes $i -o custom-columns=NAME:.metadata.name ; done
 ```
+- Filtering by field
+```
+$ awk -F "|" '$5 < 4000 ' file.txt
+
+08|garca|branca|branca_a_garca@gmail.com|1000
+09|micael|o gato|micael@gmail.com|2000
+
+/// file.txt
+06|amazonia|mosquiteira|am_mosquiteira@gmail.com|4500
+07|jacare|pantanoso|pantanoso@gmail.com|4000
+08|garca|branca|branca_a_garca@gmail.com|1000
+09|micael|o gato|micael@gmail.com|2000
+```
+
 # GREP
 ```
 egrep "message" -rc * 2>/dev/null | grep -v :0
