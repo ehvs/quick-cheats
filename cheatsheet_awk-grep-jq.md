@@ -46,3 +46,22 @@ cat journalblah | grep 'Sep 20 23:' | grep 'message' | tail -n 1
 cat journalblah | grep 'Sep 20' | grep 'message' | wc -l
 cat data | jq .user.username -r | sort | uniq -c | sort -n
 ```
+
+# JQ
+```
+oc get pods -o json | jq ".items[] | { pod_name: .metadata.name, containers: ( .spec.containers[].resources | { requests } ) }"
+
+{
+  "pod_name": "logging-loki-gateway-68d8b7744b-qvlw6",
+  "containers": {
+    "requests": {
+      "cpu": "500m",
+      "memory": "500Mi"
+    }
+  }
+}
+{
+  "pod_name": "logging-loki-gateway-68d8b7744b-qvlw6",
+  "containers": {
+    "requests": null
+```
