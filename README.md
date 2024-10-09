@@ -1,38 +1,37 @@
-# PowerLevel9k to terminal!
-### Install ZSH
-~~~
-sudo dnf install -y zsh
-~~~
+# About
 
-### Install Oh My ZSH
-#### https://github.com/robbyrussell/oh-my-zsh
-~~~
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-~~~
-### Install PowerLevel9k
-#### https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-2-install-for-oh-my-zsh
-~~~
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-~~~
+## Terminal tools
+
+| Package | What it does | Where to find |
+|---|---|---|
+|wd| Directories bookmark| https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/wd |
+|oh-my-posh| pretty interface | https://ohmyposh.dev/ |
+|oh-my-zsh| REQUIREMENT ⭐ |https://github.com/robbyrussell/oh-my-zsh |
+|Nerd Fonts|  REQUIREMENT ⭐ | https://www.nerdfonts.com/ |
+|bat| cat with wings |https://github.com/sharkdp/bat |
+|kdash | Simple k8s dashboard| https://github.com/kdash-rs/kdash|
+
+### Configuration files to backup
+
+| Package | Path |
+|---|---|
+|wd | $HOME/.warprc |
+|oh-my-posh | $HOME/gruvbox.omp.json |
+|oh-my-zsh | $HOME/.zshrc AND $HOME/.oh-my-zsh/ |
+|bat| $HOME/.config/bat/config |
+
+
 #### For root
 Does the same then change the default shell by:
 ~~~
 # chsh -s $(which zsh) root
 ~~~
-### Install Hack font
-1. Download HACK font from link below
-~~~
-https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-~~~
 
 2. Install the font
 3. Add as default font to your terminal
 
-### Reference
-[GNOME 3.28] PowerLevel9k -  The Most Cool Linux Shell EVER!
-https://youtu.be/wM1uNqj71Ko
-
-### Colorful less tool
+### Outdated
+- Colorful less tool
 
 1. Install python3-pygments
 ~~~
@@ -48,9 +47,3 @@ export LESSOPEN='|~/.lessfilter %s'
 ~~~ 
 chmod u+x ~/.lessfilter
 ~~~ 
-
-### Install packages
-
-~~~
-sudo dnf install -y bat googler
-~~~
