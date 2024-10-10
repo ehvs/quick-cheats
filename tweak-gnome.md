@@ -1,7 +1,23 @@
-# Tweak Gnome 42
 
-- Themes at: https://www.gnome-look.org/browse/
+# Gnome 46
 
+- Check version
+```
+gnome-shell --version
+```
+
+## Gnome Text Editor
+It uses GTK 5, and the built-in themes are inside `/usr/share/gtksourceview-5/styles`
+
+- Built-in output
+```
+$ ls /usr/share/gtksourceview-5/styles
+Adwaita-dark.xml  Adwaita.xml  classic-dark.xml  classic.xml  cobalt-light.xml  cobalt.xml  kate-dark.xml  kate.xml  oblivion.xml  solarized-dark.xml  solarized-light.xml  styles.rng  tango.xml
+```
+
+- Custom themes are placed at `~/.local/share/gtksourceview-5/styles`
+
+# Tweak Gnome 42 (Outdated)
 ## Prerequisites
 
 - folder `~/.config/gtk-4.0/`
