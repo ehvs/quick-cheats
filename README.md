@@ -19,7 +19,7 @@
 |oh-my-posh | $HOME/gruvbox.omp.json |
 |oh-my-zsh | $HOME/.zshrc AND $HOME/.oh-my-zsh/ |
 |bat| $HOME/.config/bat/config |
-
+ 
 
 #### For root
 Does the same then change the default shell by:
