@@ -17,6 +17,13 @@ Adwaita-dark.xml  Adwaita.xml  classic-dark.xml  classic.xml  cobalt-light.xml  
 
 - Custom themes are placed at `~/.local/share/gtksourceview-5/styles`
 
+## Gnome Cursor
+
+- [Example - Oreo Cursor](https://www.gnome-look.org/p/1360254)
+
+1. Download the .tar.gz file, extract, and copy the folder to `~/.local/share/icons`
+1. Use the `Tweaks` tool, and under `Appearance` > `Styles` > `Cursor` , select the new theme.
+
 # Tweak Gnome 42 (Outdated)
 ## Prerequisites
 
