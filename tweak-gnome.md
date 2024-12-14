@@ -24,7 +24,7 @@ Adwaita-dark.xml  Adwaita.xml  classic-dark.xml  classic.xml  cobalt-light.xml  
 1. Use the `Tweaks` tool, and under `Appearance` > `Styles` > `Cursor` , select the new theme.
 
 ## Enabling XORG
-
+- Uncomment the line under `[daemon]`
 ```
 sudo vim /etc/gdm/custom.conf
 ```
