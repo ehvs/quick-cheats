@@ -25,6 +25,9 @@ Adwaita-dark.xml  Adwaita.xml  classic-dark.xml  classic.xml  cobalt-light.xml  
 
 ## Enabling XORG
 
+```
+sudo vim /etc/gdm/custom.conf
+```
 
 
 # Tweak Gnome 42 (Outdated)
