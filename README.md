@@ -1,7 +1,7 @@
 # About
 
 - About Gnome: [tweak-gnome.md](./tweak-gnome.md)
-
+- About Git:
 
 ## Terminal tools
 
