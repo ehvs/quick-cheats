@@ -1,5 +1,8 @@
 # About
 
+- About Gnome: [tweak-gnome.md](./tweak-gnome.md)
+
+
 ## Terminal tools
 
 | Package | What it does | Where to find |
