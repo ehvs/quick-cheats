@@ -1,4 +1,3 @@
-
 # Gnome 46
 
 - Check version
@@ -23,6 +22,10 @@ Adwaita-dark.xml  Adwaita.xml  classic-dark.xml  classic.xml  cobalt-light.xml  
 
 1. Download the .tar.gz file, extract, and copy the folder to `~/.local/share/icons`
 1. Use the `Tweaks` tool, and under `Appearance` > `Styles` > `Cursor` , select the new theme.
+
+## Enabling XORG
+
+
 
 # Tweak Gnome 42 (Outdated)
 ## Prerequisites
